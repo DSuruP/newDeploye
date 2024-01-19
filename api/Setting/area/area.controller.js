@@ -130,7 +130,6 @@ exports.deleteArea = async (req, res, next) => {
 
     res.status(200).json({ message: "Area Deleted successfully" });
   } catch (error) {
-    // Send Error Response
     res
       .status(500)
       .json({ message: "Something went wrong", error: error.message });
